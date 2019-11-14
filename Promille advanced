@@ -1,0 +1,66 @@
+import java.util.Scanner;
+public class Promilletester{
+    public Promilletester(){
+        Scanner input = new Scanner (System.in);
+        double promille = input.nextDouble();
+        int wiederholung = input.nextInt();
+        int gefaerdung = input.nextInt();
+        if (promille < 0.5){
+            if (gefaerdung == 0){
+                System.out.println("Lob!");
+            }
+            else{
+                System.out.println("3 Punkte, Entziehung des Führer­scheins, Freiheitsstrafe oder Geldstrafe");
+            }
+        }
+        else if (promille < 0.7){
+
+            if (gefaerdung == 0){
+                if (wiederholung == 1){
+                    System.out.println("500€, 2 Punkte und 1 Monat Fahrverbot.");
+                }
+                else if (wiederholung == 2){
+                    System.out.println("1000€, 2 Punkte und 3 Monat Fahrverbot.");
+                }
+                else if (wiederholung == 3){
+                    System.out.println("1500€, 2 Punkte und 1 Monat Fahrverbot.");
+                }
+            }
+            else{
+                System.out.println("3 Punkte, Entziehung des Führer­scheins, Freiheitsstrafe oder Geldstrafe");
+            }
+        }
+        else if (promille >= 0.9){
+            if (gefaerdung == 0){
+                if (wiederholung == 1){
+                    System.out.println("500€, 2 Punkte und 1 Monat Fahrverbot.");
+                }
+                else if (wiederholung == 2){
+                    System.out.println("1000€, 2 Punkte und 3 Monat Fahrverbot.");
+                }
+                else if (wiederholung == 3){
+                    System.out.println("1500€, 2 Punkte und 1 Monat Fahrverbot.");
+                }
+            }
+            else{
+                System.out.println("3 Punkte, Entziehung des Führer­scheins, Freiheitsstrafe oder Geldstrafe");
+            }
+        }
+        else if (promille > 1.09){
+            if (gefaerdung == 0){
+                if (wiederholung == 1){
+                    System.out.println("500€, 2 Punkte und 1 Monat Fahrverbot.");
+                }
+                else if (wiederholung == 2){
+                    System.out.println("1000€, 2 Punkte und 3 Monat Fahrverbot.");
+                }
+                else if (wiederholung == 3){
+                    System.out.println("1500€, 2 Punkte und 1 Monat Fahrverbot.");
+                }
+            }
+            else{
+                System.out.println("3 Punkte, Entziehung des Führer­scheins, Freiheitsstrafe oder Geldstrafe");
+            }
+        }
+    }
+}
