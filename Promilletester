@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Promilletester{
+    private int promille;
+    public Promilletester(){
+        Scanner input = new Scanner (System.in);
+        promille = input.nextInt();
+        if (promille < 0.5){
+            System.out.println("Lob!");
+        }
+        else if (promille < 0.7){
+            System.out.println("Mahnung!");
+        }
+        else if (promille >= 0.9){
+            System.out.println("2 Punkte in Flensburg");
+        }
+        else if (promille > 0.9){
+            System.out.println("5 Punkte & Führrerscheineentzug");
+        }
+    }
+}
